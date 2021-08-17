@@ -1,0 +1,807 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D41B594A268E802C00EBE8BB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B5949268E802C00EBE8BB /* BaseViewController.swift */; };
+		D41B594D268E804C00EBE8BB /* MainSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B594C268E804C00EBE8BB /* MainSceneView.swift */; };
+		D41B5959268E85B500EBE8BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D41B5958268E85B500EBE8BB /* GoogleService-Info.plist */; };
+		D41B595E268E9E0500EBE8BB /* AnnotationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B595D268E9E0500EBE8BB /* AnnotationRepository.swift */; };
+		D41B5960268E9E8A00EBE8BB /* DomainAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B595F268E9E8A00EBE8BB /* DomainAnnotation.swift */; };
+		D41B5962268E9FA300EBE8BB /* AnnotationFirebaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B5961268E9FA300EBE8BB /* AnnotationFirebaseRepository.swift */; };
+		D41B5965268EA8F200EBE8BB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D41B5964268EA8F200EBE8BB /* FirebaseAnalytics */; };
+		D41B5967268EA8F200EBE8BB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D41B5966268EA8F200EBE8BB /* FirebaseAuth */; };
+		D41B5969268EA8F200EBE8BB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D41B5968268EA8F200EBE8BB /* FirebaseFirestore */; };
+		D41B596B268EA8F200EBE8BB /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = D41B596A268EA8F200EBE8BB /* FirebaseFirestoreSwift-Beta */; };
+		D41B596D268EAAD500EBE8BB /* RepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B596C268EAAD500EBE8BB /* RepositoryError.swift */; };
+		D41B596F268EC08D00EBE8BB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B596E268EC08C00EBE8BB /* NetworkManager.swift */; };
+		D41B5972268EC1B100EBE8BB /* MainSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B5971268EC1B100EBE8BB /* MainSceneInteractor.swift */; };
+		D41B5974268F3BA500EBE8BB /* DocumentSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B5973268F3BA500EBE8BB /* DocumentSnapshot.swift */; };
+		D41B5978268F3D7000EBE8BB /* FirebaseCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B5977268F3D7000EBE8BB /* FirebaseCodable.swift */; };
+		D41B597A268F41E600EBE8BB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B5979268F41E600EBE8BB /* Constants.swift */; };
+		D41B597C268F423200EBE8BB /* FIRFirestore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B597B268F423200EBE8BB /* FIRFirestore.swift */; };
+		D41B597E268F45E100EBE8BB /* MainSceneAnnotationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B597D268F45E100EBE8BB /* MainSceneAnnotationEntity.swift */; };
+		D41B5980268F62F600EBE8BB /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B597F268F62F600EBE8BB /* AppContainer.swift */; };
+		D4E26AB2268E7F5C009D0315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E26AB1268E7F5C009D0315 /* AppDelegate.swift */; };
+		D4E26AB4268E7F5C009D0315 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E26AB3268E7F5C009D0315 /* SceneDelegate.swift */; };
+		D4E26AB6268E7F5C009D0315 /* MainSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E26AB5268E7F5C009D0315 /* MainSceneViewController.swift */; };
+		D4E26ABB268E7F5E009D0315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4E26ABA268E7F5E009D0315 /* Assets.xcassets */; };
+		D4E26ABE268E7F5E009D0315 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4E26ABC268E7F5E009D0315 /* LaunchScreen.storyboard */; };
+		D4E26AC9268E7F5E009D0315 /* ReposifireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E26AC8268E7F5E009D0315 /* ReposifireTests.swift */; };
+		D4E26AD4268E7F5E009D0315 /* ReposifireUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E26AD3268E7F5E009D0315 /* ReposifireUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4E26AC5268E7F5E009D0315 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4E26AA6268E7F5C009D0315 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4E26AAD268E7F5C009D0315;
+			remoteInfo = Reposifire;
+		};
+		D4E26AD0268E7F5E009D0315 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4E26AA6268E7F5C009D0315 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4E26AAD268E7F5C009D0315;
+			remoteInfo = Reposifire;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D41B5949268E802C00EBE8BB /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D41B594C268E804C00EBE8BB /* MainSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneView.swift; sourceTree = "<group>"; };
+		D41B5958268E85B500EBE8BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D41B595D268E9E0500EBE8BB /* AnnotationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationRepository.swift; sourceTree = "<group>"; };
+		D41B595F268E9E8A00EBE8BB /* DomainAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainAnnotation.swift; sourceTree = "<group>"; };
+		D41B5961268E9FA300EBE8BB /* AnnotationFirebaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationFirebaseRepository.swift; sourceTree = "<group>"; };
+		D41B596C268EAAD500EBE8BB /* RepositoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryError.swift; sourceTree = "<group>"; };
+		D41B596E268EC08C00EBE8BB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D41B5971268EC1B100EBE8BB /* MainSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneInteractor.swift; sourceTree = "<group>"; };
+		D41B5973268F3BA500EBE8BB /* DocumentSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentSnapshot.swift; sourceTree = "<group>"; };
+		D41B5977268F3D7000EBE8BB /* FirebaseCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCodable.swift; sourceTree = "<group>"; };
+		D41B5979268F41E600EBE8BB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D41B597B268F423200EBE8BB /* FIRFirestore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIRFirestore.swift; sourceTree = "<group>"; };
+		D41B597D268F45E100EBE8BB /* MainSceneAnnotationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneAnnotationEntity.swift; sourceTree = "<group>"; };
+		D41B597F268F62F600EBE8BB /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		D4E26AAE268E7F5C009D0315 /* Reposifire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reposifire.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4E26AB1268E7F5C009D0315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D4E26AB3268E7F5C009D0315 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D4E26AB5268E7F5C009D0315 /* MainSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneViewController.swift; sourceTree = "<group>"; };
+		D4E26ABA268E7F5E009D0315 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4E26ABD268E7F5E009D0315 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D4E26ABF268E7F5E009D0315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4E26AC4268E7F5E009D0315 /* ReposifireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReposifireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4E26AC8268E7F5E009D0315 /* ReposifireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposifireTests.swift; sourceTree = "<group>"; };
+		D4E26ACA268E7F5E009D0315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4E26ACF268E7F5E009D0315 /* ReposifireUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReposifireUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4E26AD3268E7F5E009D0315 /* ReposifireUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposifireUITests.swift; sourceTree = "<group>"; };
+		D4E26AD5268E7F5E009D0315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4E26AAB268E7F5C009D0315 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D41B5965268EA8F200EBE8BB /* FirebaseAnalytics in Frameworks */,
+				D41B596B268EA8F200EBE8BB /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				D41B5967268EA8F200EBE8BB /* FirebaseAuth in Frameworks */,
+				D41B5969268EA8F200EBE8BB /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4E26AC1268E7F5E009D0315 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4E26ACC268E7F5E009D0315 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D41B5945268E7FF900EBE8BB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D41B5949268E802C00EBE8BB /* BaseViewController.swift */,
+				D4E26AB1268E7F5C009D0315 /* AppDelegate.swift */,
+				D4E26AB3268E7F5C009D0315 /* SceneDelegate.swift */,
+				D41B596E268EC08C00EBE8BB /* NetworkManager.swift */,
+				D41B597F268F62F600EBE8BB /* AppContainer.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D41B5946268E800500EBE8BB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D41B5975268F3D5400EBE8BB /* Protocol */,
+				D41B595A268E8D5100EBE8BB /* Extensions */,
+				D4E26ABA268E7F5E009D0315 /* Assets.xcassets */,
+				D4E26ABC268E7F5E009D0315 /* LaunchScreen.storyboard */,
+				D41B5958268E85B500EBE8BB /* GoogleService-Info.plist */,
+				D41B596C268EAAD500EBE8BB /* RepositoryError.swift */,
+				D41B5979268F41E600EBE8BB /* Constants.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D41B5947268E801300EBE8BB /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				D41B5948268E801C00EBE8BB /* MainScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		D41B5948268E801C00EBE8BB /* MainScene */ = {
+			isa = PBXGroup;
+			children = (
+				D4E26AB5268E7F5C009D0315 /* MainSceneViewController.swift */,
+				D41B594B268E803600EBE8BB /* View */,
+				D41B5970268EC18F00EBE8BB /* Interactor */,
+			);
+			path = MainScene;
+			sourceTree = "<group>";
+		};
+		D41B594B268E803600EBE8BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D41B594C268E804C00EBE8BB /* MainSceneView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D41B5955268E832300EBE8BB /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				D41B595D268E9E0500EBE8BB /* AnnotationRepository.swift */,
+				D41B5961268E9FA300EBE8BB /* AnnotationFirebaseRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		D41B5956268E832F00EBE8BB /* Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				D41B595F268E9E8A00EBE8BB /* DomainAnnotation.swift */,
+				D41B5955268E832300EBE8BB /* Repositories */,
+			);
+			path = Annotation;
+			sourceTree = "<group>";
+		};
+		D41B595A268E8D5100EBE8BB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D41B5973268F3BA500EBE8BB /* DocumentSnapshot.swift */,
+				D41B597B268F423200EBE8BB /* FIRFirestore.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D41B5970268EC18F00EBE8BB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D41B5971268EC1B100EBE8BB /* MainSceneInteractor.swift */,
+				D41B597D268F45E100EBE8BB /* MainSceneAnnotationEntity.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D41B5975268F3D5400EBE8BB /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				D41B5977268F3D7000EBE8BB /* FirebaseCodable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		D41B5981268F883D00EBE8BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D41B5956268E832F00EBE8BB /* Annotation */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D4E26AA5268E7F5C009D0315 = {
+			isa = PBXGroup;
+			children = (
+				D4E26AB0268E7F5C009D0315 /* Reposifire */,
+				D4E26AC7268E7F5E009D0315 /* ReposifireTests */,
+				D4E26AD2268E7F5E009D0315 /* ReposifireUITests */,
+				D4E26AAF268E7F5C009D0315 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4E26AAF268E7F5C009D0315 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4E26AAE268E7F5C009D0315 /* Reposifire.app */,
+				D4E26AC4268E7F5E009D0315 /* ReposifireTests.xctest */,
+				D4E26ACF268E7F5E009D0315 /* ReposifireUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4E26AB0268E7F5C009D0315 /* Reposifire */ = {
+			isa = PBXGroup;
+			children = (
+				D41B5981268F883D00EBE8BB /* Model */,
+				D41B5945268E7FF900EBE8BB /* Controller */,
+				D41B5947268E801300EBE8BB /* Scenes */,
+				D41B5946268E800500EBE8BB /* Shared */,
+				D4E26ABF268E7F5E009D0315 /* Info.plist */,
+			);
+			path = Reposifire;
+			sourceTree = "<group>";
+		};
+		D4E26AC7268E7F5E009D0315 /* ReposifireTests */ = {
+			isa = PBXGroup;
+			children = (
+				D4E26AC8268E7F5E009D0315 /* ReposifireTests.swift */,
+				D4E26ACA268E7F5E009D0315 /* Info.plist */,
+			);
+			path = ReposifireTests;
+			sourceTree = "<group>";
+		};
+		D4E26AD2268E7F5E009D0315 /* ReposifireUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D4E26AD3268E7F5E009D0315 /* ReposifireUITests.swift */,
+				D4E26AD5268E7F5E009D0315 /* Info.plist */,
+			);
+			path = ReposifireUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4E26AAD268E7F5C009D0315 /* Reposifire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4E26AD8268E7F5E009D0315 /* Build configuration list for PBXNativeTarget "Reposifire" */;
+			buildPhases = (
+				D4E26AAA268E7F5C009D0315 /* Sources */,
+				D4E26AAB268E7F5C009D0315 /* Frameworks */,
+				D4E26AAC268E7F5C009D0315 /* Resources */,
+				D41B5957268E849C00EBE8BB /* Swift Lint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Reposifire;
+			packageProductDependencies = (
+				D41B5964268EA8F200EBE8BB /* FirebaseAnalytics */,
+				D41B5966268EA8F200EBE8BB /* FirebaseAuth */,
+				D41B5968268EA8F200EBE8BB /* FirebaseFirestore */,
+				D41B596A268EA8F200EBE8BB /* FirebaseFirestoreSwift-Beta */,
+			);
+			productName = Reposifire;
+			productReference = D4E26AAE268E7F5C009D0315 /* Reposifire.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D4E26AC3268E7F5E009D0315 /* ReposifireTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4E26ADB268E7F5E009D0315 /* Build configuration list for PBXNativeTarget "ReposifireTests" */;
+			buildPhases = (
+				D4E26AC0268E7F5E009D0315 /* Sources */,
+				D4E26AC1268E7F5E009D0315 /* Frameworks */,
+				D4E26AC2268E7F5E009D0315 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4E26AC6268E7F5E009D0315 /* PBXTargetDependency */,
+			);
+			name = ReposifireTests;
+			productName = ReposifireTests;
+			productReference = D4E26AC4268E7F5E009D0315 /* ReposifireTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D4E26ACE268E7F5E009D0315 /* ReposifireUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4E26ADE268E7F5E009D0315 /* Build configuration list for PBXNativeTarget "ReposifireUITests" */;
+			buildPhases = (
+				D4E26ACB268E7F5E009D0315 /* Sources */,
+				D4E26ACC268E7F5E009D0315 /* Frameworks */,
+				D4E26ACD268E7F5E009D0315 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4E26AD1268E7F5E009D0315 /* PBXTargetDependency */,
+			);
+			name = ReposifireUITests;
+			productName = ReposifireUITests;
+			productReference = D4E26ACF268E7F5E009D0315 /* ReposifireUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4E26AA6268E7F5C009D0315 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					D4E26AAD268E7F5C009D0315 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					D4E26AC3268E7F5E009D0315 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = D4E26AAD268E7F5C009D0315;
+					};
+					D4E26ACE268E7F5E009D0315 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = D4E26AAD268E7F5C009D0315;
+					};
+				};
+			};
+			buildConfigurationList = D4E26AA9268E7F5C009D0315 /* Build configuration list for PBXProject "Reposifire" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4E26AA5268E7F5C009D0315;
+			packageReferences = (
+				D41B5963268EA8F200EBE8BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = D4E26AAF268E7F5C009D0315 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4E26AAD268E7F5C009D0315 /* Reposifire */,
+				D4E26AC3268E7F5E009D0315 /* ReposifireTests */,
+				D4E26ACE268E7F5E009D0315 /* ReposifireUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4E26AAC268E7F5C009D0315 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4E26ABE268E7F5E009D0315 /* LaunchScreen.storyboard in Resources */,
+				D4E26ABB268E7F5E009D0315 /* Assets.xcassets in Resources */,
+				D41B5959268E85B500EBE8BB /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4E26AC2268E7F5E009D0315 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4E26ACD268E7F5E009D0315 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D41B5957268E849C00EBE8BB /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4E26AAA268E7F5C009D0315 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D41B595E268E9E0500EBE8BB /* AnnotationRepository.swift in Sources */,
+				D41B597C268F423200EBE8BB /* FIRFirestore.swift in Sources */,
+				D41B5980268F62F600EBE8BB /* AppContainer.swift in Sources */,
+				D41B5962268E9FA300EBE8BB /* AnnotationFirebaseRepository.swift in Sources */,
+				D41B5974268F3BA500EBE8BB /* DocumentSnapshot.swift in Sources */,
+				D4E26AB6268E7F5C009D0315 /* MainSceneViewController.swift in Sources */,
+				D41B594A268E802C00EBE8BB /* BaseViewController.swift in Sources */,
+				D41B597A268F41E600EBE8BB /* Constants.swift in Sources */,
+				D41B596F268EC08D00EBE8BB /* NetworkManager.swift in Sources */,
+				D41B596D268EAAD500EBE8BB /* RepositoryError.swift in Sources */,
+				D41B5960268E9E8A00EBE8BB /* DomainAnnotation.swift in Sources */,
+				D4E26AB2268E7F5C009D0315 /* AppDelegate.swift in Sources */,
+				D41B594D268E804C00EBE8BB /* MainSceneView.swift in Sources */,
+				D41B5972268EC1B100EBE8BB /* MainSceneInteractor.swift in Sources */,
+				D41B5978268F3D7000EBE8BB /* FirebaseCodable.swift in Sources */,
+				D41B597E268F45E100EBE8BB /* MainSceneAnnotationEntity.swift in Sources */,
+				D4E26AB4268E7F5C009D0315 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4E26AC0268E7F5E009D0315 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4E26AC9268E7F5E009D0315 /* ReposifireTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4E26ACB268E7F5E009D0315 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4E26AD4268E7F5E009D0315 /* ReposifireUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4E26AC6268E7F5E009D0315 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4E26AAD268E7F5C009D0315 /* Reposifire */;
+			targetProxy = D4E26AC5268E7F5E009D0315 /* PBXContainerItemProxy */;
+		};
+		D4E26AD1268E7F5E009D0315 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4E26AAD268E7F5C009D0315 /* Reposifire */;
+			targetProxy = D4E26AD0268E7F5E009D0315 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D4E26ABC268E7F5E009D0315 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4E26ABD268E7F5E009D0315 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D4E26AD6268E7F5E009D0315 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D4E26AD7268E7F5E009D0315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4E26AD9268E7F5E009D0315 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8Q8C944BU;
+				INFOPLIST_FILE = Reposifire/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fredlacis.Reposifire;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D4E26ADA268E7F5E009D0315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8Q8C944BU;
+				INFOPLIST_FILE = Reposifire/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fredlacis.Reposifire;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D4E26ADC268E7F5E009D0315 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8Q8C944BU;
+				INFOPLIST_FILE = ReposifireTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fredlacis.ReposifireTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reposifire.app/Reposifire";
+			};
+			name = Debug;
+		};
+		D4E26ADD268E7F5E009D0315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8Q8C944BU;
+				INFOPLIST_FILE = ReposifireTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fredlacis.ReposifireTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reposifire.app/Reposifire";
+			};
+			name = Release;
+		};
+		D4E26ADF268E7F5E009D0315 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8Q8C944BU;
+				INFOPLIST_FILE = ReposifireUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fredlacis.ReposifireUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Reposifire;
+			};
+			name = Debug;
+		};
+		D4E26AE0268E7F5E009D0315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8Q8C944BU;
+				INFOPLIST_FILE = ReposifireUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fredlacis.ReposifireUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Reposifire;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4E26AA9268E7F5C009D0315 /* Build configuration list for PBXProject "Reposifire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4E26AD6268E7F5E009D0315 /* Debug */,
+				D4E26AD7268E7F5E009D0315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4E26AD8268E7F5E009D0315 /* Build configuration list for PBXNativeTarget "Reposifire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4E26AD9268E7F5E009D0315 /* Debug */,
+				D4E26ADA268E7F5E009D0315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4E26ADB268E7F5E009D0315 /* Build configuration list for PBXNativeTarget "ReposifireTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4E26ADC268E7F5E009D0315 /* Debug */,
+				D4E26ADD268E7F5E009D0315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4E26ADE268E7F5E009D0315 /* Build configuration list for PBXNativeTarget "ReposifireUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4E26ADF268E7F5E009D0315 /* Debug */,
+				D4E26AE0268E7F5E009D0315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D41B5963268EA8F200EBE8BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D41B5964268EA8F200EBE8BB /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D41B5963268EA8F200EBE8BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		D41B5966268EA8F200EBE8BB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D41B5963268EA8F200EBE8BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		D41B5968268EA8F200EBE8BB /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D41B5963268EA8F200EBE8BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		D41B596A268EA8F200EBE8BB /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D41B5963268EA8F200EBE8BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D4E26AA6268E7F5C009D0315 /* Project object */;
+}
